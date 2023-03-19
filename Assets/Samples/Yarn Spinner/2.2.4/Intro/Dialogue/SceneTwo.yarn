@@ -1,0 +1,111 @@
+﻿title: SceneTwo
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: People ganged up against you and started bullying you. They start belittling you and you are all alone to deal with them. What are your thoughts in this scenario?
+
+<<disableSkipButton>>
+
+-> It will never be my fault for being bullied. It is the bully’s problem that is causing them to act like this. 
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionOne>>
+-> Even if they are in the wrong, I can choose to forgive them.
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionTwo>>
+-> I can reach out to people who I know can provide me guidance as help.
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionThree>>
+-> If I can, I should stand up to the bully and set some clear boundaries.
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionFour>>
+-> I deserve to get bullied and the bully is saying true stuff about me.
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionFive>>
+-> I cannot trust anyone and the only solution to avoid getting bullied is to limit my social interactions. 
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionSix>>
+-> I should also hurt my bully or make them suffer to take my revenge.
+    <<enableSkipButton>>
+    <<jump SceneTwodecisionSeven>>
+===
+
+title: SceneTwodecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Other ways you could think about handling this situation could be:
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Other ways you could think about handling this situation could be: 
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Other ways you could think about handling this situation could be:
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionFour
+---
+Player: You should not blame yourself for being bullied. Thinking that the bully is saying true stuff is not true. You should realize that no one deserves to get bullied and you can always take an action against it one way or another. Here are some of the healthy ways you should think about this situation:
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionFive
+---
+Player: You should not blame yourself for being bullied. Thinking that the bully is saying true stuff is not true. You should realize that no one deserves to get bullied and you can always take an action against it one way or another. Here are some of the healthy ways you should think about this situation:
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionSix
+---
+Player: Just because someone bullied you, doesnot necessarily mean you have to be suspicious of everyone else. There will always be good people around you whom you can trust and confide in. Thus, socially limiting your interactions will never be a permanent solution. Here are some of the healthy ways you should think about this situation:
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneTwodecisionSeven
+---
+Player: Making someone go through what you went through is never a good solution.  You should not plan revenge and instead look for alternatives to handle the situation. Here are some of the healthy ways you should think about this situation:
+Player: - Getting bullied will never be my fault. There is something missing in the bully that is causing him/her to act like this. A troubled individual or a group of troubled people cannot determine how I feel about myself.
+Player: - I don't have to face the situation alone and  can reach out for help if I am being bullied.
+Player: - I should critically evaluate the situation and, if it is possible,  I should stand up to the bully and set boundaries that can help reduce the bullying behavior.
+-> Replay scenario.
+    <<jump SceneTwo>>
+-> Exit.
+    <<disableDialogue>>
+===

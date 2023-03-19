@@ -1,0 +1,109 @@
+﻿title: SceneThree
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: You feel left out or deprived when you see your peers enjoying, dancing, or particularly having a romantic companion and you’re not a part of any of these activities. What are your thoughts in this scenario?
+
+<<disableSkipButton>>
+
+-> I should evaluate why I am missing out and acknowledge my feelings.
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionOne>>
+->  I should challenge my negative thoughts with positive and rational thoughts.
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionTwo>>
+-> Even if I am not fitting here, I can stay connected with other people or join a new social group.
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionThree>>
+-> Just because I am not included in everything my peers do, means that I will not be included in anything.
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionFour>>
+-> I am always left out because I don’t have what it takes to fit well with other groups.
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionFive>>
+-> What I am feeling actually reflects reality. 
+    <<enableSkipButton>>
+    <<jump SceneThreedecisionSix>>
+
+===
+
+title: SceneThreedecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations.  It's normal for you to feel left out or lonely sometimes, and it's okay to acknowledge those feelings. You should think about why you are not participating in these activities. What's stopping you? 
+Player: Other ways you could think about handling this situation could be:
+Player: - Whenever I feel my negative thoughts arising, I should try to challenge them with more positive and rational thoughts.
+Player: - Even if I feel left out of a specific event or group,  I can always reach out to friends or family members, or join a new social group.
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneThreedecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Whenever you feel your negative thoughts arising, try to challenge them with more positive and rational thoughts. For example, if you think "I am alone because nobody likes me", you should instead remind yourself of the friends and family members who do care about you. 
+Player: Other ways you could think about handling this situation could be:
+Player: - It's normal for me to feel left out or lonely sometimes, and it's okay to acknowledge those feelings.
+Player: - Even if I feel left out of a specific event or group,  I can always reach out to friends or family members, or join a new social group.
+
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneThreedecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Even if you feel left out of a specific event or group, it's important for you to stay connected with others. You can always reach out to friends or family members, or join a new social group or activity to meet new people.
+Player: Other ways you could think about handling this situation could be:
+Player: - It's normal for me to feel left out or lonely sometimes, and it's okay to acknowledge those feelings.
+Player: - Whenever I feel my negative thoughts arising, I should try to challenge them with more positive and rational thoughts.
+
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneThreedecisionFour
+---
+Player:  Uh oh, It seems like you are thinking about this situation in an unhealthy way. It is not true that you will be excluded from every event or activity, just because you are not a part of some. You should counter these exaggerated thoughts with evidence that suggest otherwise. For example, you can think about the people who will happily include you in their events.  Here are some of the healthy ways you should think about this situation:
+Player: - It's normal for me to feel left out or lonely sometimes, and it's okay to acknowledge those feelings.
+Player: - Whenever I feel my negative thoughts arising, I should try to challenge them with more positive and rational thoughts.
+Player: - Even if I feel left out of a specific event or group,  I can always reach out to friends or family members, or join a new social group.
+
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneThreedecisionFive
+---
+Player:  Uh oh, It seems like you are thinking about this situation in an unhealthy way. You should not blame yourself being left out. You should realize that you have what it takes to be fun, and it’s just that there are other reasons you are not fitting well in the group.  Here are some of the healthy ways you should think about this situation:
+Player: - It's normal for me to feel left out or lonely sometimes, and it's okay to acknowledge those feelings.
+Player: - Whenever I feel my negative thoughts arising, I should try to challenge them with more positive and rational thoughts.
+Player: - Even if I feel left out of a specific event or group,  I can always reach out to friends or family members, or join a new social group.
+
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneThreedecisionSix
+---
+Player:  Uh oh, It seems like you are thinking about this situation in an unhealthy way. It is not necessarily true that what you feel reflects the actual reality. Our feelings are very likely to be far off from reality. Hence you should counter the negative feelings with evidence that suggest otherwise. For example, you can think about the people who will happily include you in their events.  Here are some of the healthy ways you should think about this situation:
+Player: - It's normal for me to feel left out or lonely sometimes, and it's okay to acknowledge those feelings.
+Player: - Whenever I feel my negative thoughts arising, I should try to challenge them with more positive and rational thoughts.
+Player: - Even if I feel left out of a specific event or group,  I can always reach out to friends or family members, or join a new social group.
+
+-> Replay scenario.
+    <<jump SceneThree>>
+-> Exit.
+    <<disableDialogue>>
+
+===

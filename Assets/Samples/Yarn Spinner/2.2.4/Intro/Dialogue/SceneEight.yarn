@@ -1,0 +1,128 @@
+﻿title: SceneEight
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: A teacher is showing signs of discrimination against you in school. This can mean singling you out in class, calling you by other hurtful names or targeting your identity/orientation.
+
+<<disableSkipButton>>
+
+-> I should stay calm and give my emotions some time to relax before reacting.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionOne>>
+-> I should analyze the situation to understand why the teacher is discriminating against me.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionTwo>>
+-> If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionThree>>
+-> If the discrimination continues despite my efforts, I should consider taking the necessary action like reporting my teacher to a higher authority.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionFour>>
+-> I believe that the discrimination is entirely my fault and that I am being singled out because of something I did or said.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionFive>>
+-> I will never have good connections with teachers. All teachers will hate me.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionSix>>
+-> What I am feeling actually reflects reality.
+    <<enableSkipButton>>
+    <<jump SceneEightdecisionSeven>>
+===
+
+title: SceneEightdecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. It's essential to stay calm and not let your emotions take over you in such situations. Take a few deep breaths and try to keep a level head. Give your emotions some time before reacting.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner.
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+
+===
+
+title: SceneEightdecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Try analyzing the situation to understand why your teacher is discriminating against you. Is it because of something you did or said? Is it because of your race, gender, or religion? Understanding the cause of the discrimination can help your respond appropriately.
+Player: Other ways you could think about handling this situation could be:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner. 
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneEightdecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations.  If you are unsure why the teacher is discriminating against you, try to ask for a clarification in a respectful and polite manner. It's possible that there was a misunderstanding or miscommunication.
+Player: Other ways you could think about handling this situation could be:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneEightdecisionFour
+---
+Player: If the discrimination has been continuing despite earlier efforts, consider taking the necessary action. This could include reporting their behavior to the school principal, filing a complaint with your school district or relevant authorities.
+Player: Other ways you could think about handling this situation could be:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner. 
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneEightdecisionFive
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Being discriminated against by a teacher will never be your fault. Even if you did do something, the teacher should clear things up respectfully instead of indulging in this behavior. Here are some of the healthy ways you should think about this situation:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner.
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneEightdecisionSix
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Just because you aren’t connecting well with one teacher, does not imply that you will never have good connections with any teacher. It is not possible to please everyone. There is no evidence to suggest that all teachers will hate you. Here are some of the healthy ways you should think about this situation:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner.
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneEightdecisionSeven
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. It is not necessarily true that what you feel reflects the actual reality. Our feelings are very likely to be far off from reality. Hence you should counter the negative feelings with evidence that suggest otherwise. For example, you can think about the teachers with whom you have had good connections.  Here are some of the healthy ways you should think about this situation:
+Player: - It's essential for me to stay calm and not let my emotions take over in such situations. I should give my emotions some time before I react.
+Player: - I should analyze the situation to understand why the teacher is discriminating against me. Is it because of something I did or said? Understanding the cause of the discrimination can help me respond appropriately.
+Player: - If I am unsure why the teacher is discriminating against me, I can try to ask for a clarification in a respectful and polite manner.
+Player: - If the discrimination continues despite my efforts, I can think about taking the necessary action. This could include reporting the behavior to the school principal or filing a complaint.
+-> Replay scenario.
+    <<jump SceneEight>>
+-> Exit.
+    <<disableDialogue>>
+
+===

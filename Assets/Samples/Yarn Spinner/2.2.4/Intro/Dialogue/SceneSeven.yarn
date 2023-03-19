@@ -1,0 +1,108 @@
+﻿title: SceneSeven
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: You hear demeaning remarks such as racist slurs or body shaming from other students due to your physical appearance.
+
+<<disableSkipButton>>
+
+-> I should challenge the negative thoughts by recognizing that they are not true and remind myself of my worth.
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionOne>>
+-> I should reach out to the people I trust. 
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionTwo>>
+-> If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions.
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionThree>>
+-> The statements about me are true. I deserve to hear such things as this situation is my fault.
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionFour>>
+-> Everyone holds the same views about me because of who I am. I am never going to be able to fit in anywhere.
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionFive>>
+-> Everyone over here is racist. I should avoid all people of such type.
+    <<enableSkipButton>>
+    <<jump SceneSevendecisionSix>>
+
+===
+
+title: SceneSevendecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. If such comments produce negative thoughts within you, such as "I'm not good enough" or "I don't belong”, challenge them by recognizing that they are not true and remind yourself of your worth.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should reach out to the people I trust for support. Talking about such experiences with someone who understands can help me process my emotions and develop coping strategies.
+Player: - If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+
+
+===
+
+title: SceneSevendecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Reach out to trusted friends, family members, or mental health professionals for support. Talking about such experiences with understanding people can help you process your emotions and develop coping strategies.
+Player: Other ways you could think about handling this situation could be:
+Player: - If such comments produce negative thoughts within me, such as "I'm not good enough"  I should challenge  them by reminding myself of my worth.
+Player: - If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+
+
+===
+
+title: SceneSevendecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. It's important for me to remember that I shouldnt necessarily give weight to such statements. If someone is passing such comments, it's their problem, not mine. Maybe there is something/insecurity within them that they are projecting on me. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+Player: Other ways you could think about handling this situation could be:
+Player: - If such comments produce negative thoughts within me, such as "I'm not good enough"  I should challenge  them by reminding myself of my worth.
+Player: - I should reach out to the people I trust for support. Talking about such experiences with someone who understands can help me process my emotions and develop coping strategies.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneSevendecisionFour
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. No one deserves to hear belittling statements about themselves. You should realize that you deserve to be treated with respect no matter what. Such behavior can never be justified. Here are some of the healthy ways you should think about this situation: 
+Player: - If such comments produce negative thoughts within me, such as "I'm not good enough"  I should challenge  them by reminding myself of my worth.
+Player: - I should reach out to the people I trust for support. Talking about such experiences with someone who understands can help me process my emotions and develop coping strategies.
+Player: - If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSevendecisionFive
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Just because some individual or a group of individuals say something about you, does not mean everyone will hold the same views. There will always be people who will love you regardless of who you are. Here are some of the healthy ways you should think about this situation:
+Player: - If such comments produce negative thoughts within me, such as "I'm not good enough"  I should challenge  them by reminding myself of my worth.
+Player: - I should reach out to the people I trust for support. Talking about such experiences with someone who understands can help me process my emotions and develop coping strategies.
+Player: - If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+
+
+===
+
+title: SceneSevendecisionSix
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Just because some people of a certain group made negative comments about you, does not necessarily mean everyone from that group is the same. There will always be some good people from that group and limiting your social interactions with everyone who belongs there will never be a good solution.  Here are some of the healthy ways you should think about this situation:
+Player: - If such comments produce negative thoughts within me, such as "I'm not good enough"  I should challenge  them by reminding myself of my worth.
+Player: - I should reach out to the people I trust for support. Talking about such experiences with someone who understands can help me process my emotions and develop coping strategies.
+Player: - If someone is passing such comments, it's their problem, not mine. I should not blame myself or feel responsible for the person's statements/actions. I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSeven>>
+-> Exit.
+    <<disableDialogue>>
+
+===

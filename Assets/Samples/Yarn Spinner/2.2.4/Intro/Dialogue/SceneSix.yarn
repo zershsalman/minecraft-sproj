@@ -1,0 +1,131 @@
+﻿title: SceneSix
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game:  You are being harassed/made uncomfortable in a crowded space like a school concert/social event.
+
+<<disableSkipButton>>
+
+-> I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionOne>>
+-> I should talk to someone I trust about what I am experiencing.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionTwo>>
+-> I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionThree>>
+-> I am definitely overreacting. That probably was not harassment, plus it wasn’t that bad.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionFour>>
+-> The worst has happened. People will now only blame me for the event and no one will hear my side of the story.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionFive>>
+-> Since harassment is just a part of life, it’s not a big deal if I got to be a victim of it.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionSix>>
+-> I feel like there is nothing I can do to stop the harassment or protect myself.
+    <<enableSkipButton>>
+    <<jump SceneSixdecisionSeven>>
+
+===
+
+title: SceneSixdecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Evaluate the situation and consider reporting the harassment to a supervisor, human resources representative, or law enforcement. You can also take steps to protect yourself by standing up against the harasser. However, your safety should be your first priority.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: -  Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSixdecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. You should talk to someone you trust, like a friend, family member, or counselor, about what I am experiencing. They can give the emotional support you need and help create your plan of action.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSixdecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Even if you feel that you cannot do anything to stop this, recognize that what is happening to you is not okay and that you deserve to be treated with respect. There is something in the harasser that is causing him/her to stoop down to this level. No one deserves to go through this.
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSixdecisionFour
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. It will never be someone’s fault for being harassed. Harassment can never be justified. You should stop blaming yourself for the incident and realize that this is all due to problems with the harasser. Here are some of the healthy ways you should think about this situation:
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneSixdecisionFive
+---
+Player:  Uh oh, It seems like you are thinking about this situation in an unhealthy way. You should stop doubting the severity of the incident. Harassment in any form cannot be justified. Thinking that the event was not that harsh or didn’t happen at all will only cause more problems. Here are some of the healthy ways you should think about this situation:
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSixdecisionSix
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. You should not think that people will only indulge in victim blaming. People are heavily against harassment and there will certainly be many people who will support you if you decide to reach out to them. Being harassed does not mean that nothing will be the same as before. Here are some of the healthy ways you should think about this situation:
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneSixdecisionSeven
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Harassment is not something that everyone has to deal with. Thinking that harassment is just a part of life and not doing anything about it means that you are enabling this bad behavior. It is a big deal if someone gets harassed and actions should be taken. Here are some of the healthy ways you should think about this situation: 
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneSixdecisionEight
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. There will always be some steps you can take to stop the harassment. Thinking that you are weak just because you cannot stand up against the harasser is not true. Victims of harassment have to consider many things before they take a step. Here are some of the healthy ways you should think about this situation: 
+Player: - I should evaluate the situation and consider reporting the harassment to someone reliable or protect myself by standing up against the harasser.
+Player: - I should talk to someone I trust, such as a friend, family member, or counselor, about what I am experiencing. They can provide me emotional support and help me develop a plan of action.
+Player: - Even if I feel that I cannot do anything to stop this, I should recognize that what is happening to me is not okay and that I deserve to be treated with respect.
+-> Replay scenario.
+    <<jump SceneSix>>
+-> Exit.
+    <<disableDialogue>>
+===

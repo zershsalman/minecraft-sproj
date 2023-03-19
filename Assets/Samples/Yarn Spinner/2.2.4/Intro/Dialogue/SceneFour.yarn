@@ -1,0 +1,84 @@
+﻿title: SceneFour
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: There’s a function going on in your school and now you’re under peer pressure to use drugs. Most of the people around you are using them, and people in your social circle are now trying to convince you to take them as well. What are your thoughts in this scenario?
+
+<<disableSkipButton>>
+
+-> I should take some time to think about the potential consequences of using drugs.
+    <<enableSkipButton>>
+    <<jump SceneFourdecisionOne>>
+-> I should consider the motivations of the people who are pressuring me to use drugs and compare them with my own morals and values.
+    <<enableSkipButton>>
+    <<jump SceneFourdecisionTwo>>
+-> Taking drugs won’t have any lasting consequences.
+    <<enableSkipButton>>
+    <<jump SceneFourdecisionThree>>
+-> I should do drugs, just so I can fit in and be accepted by my peers.
+    <<enableSkipButton>>
+    <<jump SceneFourdecisionFour>>
+-> Taking drugs will prove my strength and independence. 
+    <<enableSkipButton>>
+    <<jump SceneFourdecisionFive>>
+
+===
+
+title: SceneFourdecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. You should take some time to think about the potential consequences of using drugs, both short-term and long-term. These may include health problems, legal issues, and damage to relationships.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should consider the motivations of the people who are pressuring me to use drugs.  If my morals and values are more important to me than indulging in such activities, it makes sense to not give in to peer pressure.
+-> Replay scenario.
+    <<jump SceneFour>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneFourdecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. You should consider the motivations of the people who are pressuring you to use drugs. Are they really looking out for my best interests? If the interests are not in your favor, try to remove yourself from the situation. If your morals and values are more important to you than indulging in such activities, it makes sense to not give in to peer pressure.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should take some time to think about the potential consequences of using drugs, both short-term and long-term.
+-> Replay scenario.
+    <<jump SceneFour>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneFourdecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Uh oh, It seems like you are thinking about this situation in an unhealthy way. Most people start off by being confident that they are just going to take the drug once. However, drugs are quite addictive in nature and people are unable to cope with their negative consequences. Here are some of the healthy ways you should think about this situation:
+Player: - I should take some time to think about the potential consequences of using drugs, both short-term and long-term.
+Player: - I should consider the motivations of the people who are pressuring me to use drugs.  If my morals and values are more important to me than indulging in such activities, it makes sense to not give in to peer pressure.
+-> Replay scenario.
+    <<jump SceneFour>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFourdecisionFour
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. You should not feel pressured to sacrifice your own comfort just for the sake of pleasing someone. You should not be friends with people who judge you for your choices and rules in the first place. Here are some of the healthy ways you should think about this situation:
+Player: - I should take some time to think about the potential consequences of using drugs, both short-term and long-term.
+Player: - I should consider the motivations of the people who are pressuring me to use drugs.  If my morals and values are more important to me than indulging in such activities, it makes sense to not give in to peer pressure.
+-> Replay scenario.
+    <<jump SceneFour>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFourdecisionFive
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Your strength does not depend on you indulging in such activities. You should reconsider your social circle if people in it consider you weak just because you don't take drugs. Here are some of the healthy ways you should think about this situation:
+Player: - I should take some time to think about the potential consequences of using drugs, both short-term and long-term.
+Player: - I should consider the motivations of the people who are pressuring me to use drugs.  If my morals and values are more important to me than indulging in such activities, it makes sense to not give in to peer pressure.
+-> Replay scenario.
+    <<jump SceneFour>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+

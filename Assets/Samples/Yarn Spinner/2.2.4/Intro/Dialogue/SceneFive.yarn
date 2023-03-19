@@ -1,0 +1,104 @@
+﻿title: SceneFive
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game:  Your teacher just taunted you in front of the whole class because of you got below average grades a couple of times and this is now bothering you. What are your thoughts in this scenario?
+
+<<disableSkipButton>>
+
+-> My value and worth are not dependent on my academic performance.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionOne>>
+-> I should talk to a trusted teacher, counselor, or family member about this situation.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionTwo>>
+-> I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionThree>>
+-> I'm a total failure because I got a bad grade.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionFour>>
+-> The teacher is rightfully taunting me because I'm a terrible student.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionFive>>
+-> I'll never get into college or have a successful career because of my bad grades and poor performance.
+    <<enableSkipButton>>
+    <<jump SceneFivedecisionSix>>
+
+===
+
+title: SceneFivedecisionOne
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Your grades do not define you as a person. Your value and worth are not dependent on your academic performance. It is okay to not score consistently at the top. Ups and downs happen and you should not let such taunts affect you.
+Player: Other ways you could think about handling this situation could be:
+Player: - I should talk to a trusted teacher, counselor, or family member about the situation. They can provide me with guidance and support.
+Player: - I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.
+-> Replay scenario.
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFivedecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. You should consider talking to a trusted teacher, counselor, or family member about the situation. They can provide you with guidance and support, and help you come up with strategies for improving your grades.
+Player: Other ways you could think about handling this situation could be:
+Player: - My value and worth are not dependent on my academic performance. It is okay to not score consistently at the top.
+Player: - I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.
+-> Replay scenario.
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFivedecisionThree
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. Be honest with yourself, and evaluate your performance, and if you feel that you can work harder and get better grades, then you should take responsibility, and realize that you have the power to improve your grades. This will allow you to stay motivated and focused on making positive changes.
+Player: - My value and worth are not dependent on my academic performance. It is okay to not score consistently at the top.
+Player: - I should talk to a trusted teacher, counselor, or family member about the situation. They can provide me with guidance and support.
+-> Replay scenario.
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFivedecisionFour
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Uh oh, It seems like you are thinking about this situation in an unhealthy way. Just because you got a bad grade, doesn’t necessarily mean you will never get good marks. A bad grade does not mean you are a total failure. It is okay to not score well sometimes. What  matters is that you try hard to improve. Here are some of the healthy ways you should think about this situation: 
+Player: - My value and worth are not dependent on my academic performance. It is okay to not score consistently at the top.
+Player: - I should talk to a trusted teacher, counselor, or family member about the situation. They can provide me with guidance and support.
+Player: - I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.
+-> Replay scenario.
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneFivedecisionFive
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. It is never okay for a teacher to taunt a student. Also, just because you got bad grades does not mean that you are a bad student. You should stop blaming yourself in such situations. Here are some of the healthy ways you should think about this situation:
+Player: - My value and worth are not dependent on my academic performance. It is okay to not score consistently at the top.
+Player: - I should talk to a trusted teacher, counselor, or family member about the situation. They can provide me with guidance and support.
+Player: - I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.-> Replay scenario.
+-> Replay scenario.
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneFivedecisionSix
+---
+Player: Uh oh, It seems like you are thinking about this situation in an unhealthy way. Getting bad grades does not mean that you will never be successful in life. Most people get below average grades at one point or another. You should counter these negative exaggerated thoughts with positive thoughts. For example “Ups and downs happen. No one stays at the top consistently. My success cannot be determined by a few bad grades”. Here are some of the healthy ways you should think about this situation: 
+Player: - My value and worth are not dependent on my academic performance. It is okay to not score consistently at the top.
+Player: - I should talk to a trusted teacher, counselor, or family member about the situation. They can provide me with guidance and support.
+Player: - I should evaluate my performance, and if I feel like I can work harder to get better grades, I should take responsibility.-> Replay scenario.
+-> Go back?
+    <<jump SceneFive>>
+-> Exit.
+    <<disableDialogue>>
+
+===

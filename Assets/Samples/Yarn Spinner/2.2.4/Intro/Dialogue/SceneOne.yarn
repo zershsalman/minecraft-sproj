@@ -1,0 +1,78 @@
+title: SceneOne
+---
+//<<declare $knows_anne_name = false as bool>>
+// Enters the room
+Game: Your bestfriend betrays you to the Principal by getting you into trouble rather than being at his/her loss. You are summoned to the Principal's office and discover this.  What are your thoughts in this scenario?
+
+<<disableSkipButton>>
+
+-> I should not react immediately and take any harsh decision.
+    <<enableSkipButton>>
+    <<jump SceneOnedecisionOne>>
+-> Even if they are in the wrong, I can choose to forgive them.
+    <<enableSkipButton>>
+    <<jump SceneOnedecisionTwo>>
+-> I feel like I cannot trust anyone after this experience.
+    <<enableSkipButton>>
+    <<jump SceneOnedecisionThree>>
+-> Maybe my friend snitched on me because of something I did.
+    <<enableSkipButton>>
+    <<jump SceneOnedecisionFour>>
+-> I can't believe this just happened. How will I survive without this friend?
+    <<enableSkipButton>>
+    <<jump SceneOnedecisionFive>>
+
+<<wait 2>>
+===
+
+title: SceneOnedecisionOne
+---
+
+
+Player: Well done! Your thinking pattern is the way it should be in such situations. You should let your emotions cool down. You should not react immediately and take any harsh decisions such as ending a friendship. You might feel differently about the situation if you give yourself some time to think.
+-> Replay scenario.
+    <<jump SceneOne>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneOnedecisionTwo
+---
+Player: Well done! Your thinking pattern is the way it should be in such situations. At an appropriate time, you should confront your friend about why they did, what they did. 
+Player: Then, base your decision on their explanation. Even if they are in the wrong, you can choose to forgive them. 
+Player: Forgiveness does not mean forgetting or condoning the behavior, but it does mean letting go of the negative emotions and moving forward. Forgiving your friend can help you to heal and move on.
+-> Replay scenario.
+    <<jump SceneOne>>
+-> Exit.
+    <<disableDialogue>>
+
+===
+
+title: SceneOnedecisionThree
+---
+Player: Just because someone close to you betrayed you, doesn’t necessarily mean  no one is trustworthy. There will always be good people around you whom you can trust and confide in. Thus, socially limiting your interactions will never be a permanent solution. Here are some of the healthy ways you should think about this situation: Don’t react immediately: I should let my emotions cool down. I should not react immediately and take any harsh decisions such as ending the friendship. Forgiveness: At an appropriate time, I should confront my friend about why they did what they did. I should base my decision on their explanation. Even if they are in the wrong, I can choose to forgive them.
+-> Replay scenario.
+    <<jump SceneOne>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneOnedecisionFour
+---
+Player: You should not blame yourself for such incidents. It is quite possible that your friend betrayed you and you had nothing to do with it. Putting yourself in the wrong when you are not will only cause further problems in the future. Misjudgements are quite common. It does not mean you start blaming yourself for the whole situation. Here are some of the healthy ways you should think about this situation: Don’t react immediately: I should let my emotions cool down. I should not react immediately and take any harsh decisions such as ending the friendship. Forgiveness: At an appropriate time, I should confront my friend about why they did what they did. I should base my decision on their explanation. Even if they are in the wrong, I can choose to forgive them. 
+-> Replay scenario.
+    <<jump SceneOne>>
+-> Exit.
+    <<disableDialogue>>
+===
+
+title: SceneOnedecisionFive
+---
+Player: You should realize that your survival does not depend on anyone other than you. Thinking that you cannot survive without someone is not true. Human beings are extremely strong and can easily manage to adapt to new circumstances. Hence, you should not forget your friend’s behavior just because you think you cannot survive without them.  Here are some of the healthy ways you should think about this situation: Don’t react immediately: I should let my emotions cool down. I should not react immediately and take any harsh decisions such as ending the friendship. Forgiveness: At an appropriate time, I should confront my friend about why they did what they did. I should base my decision on their explanation. Even if they are in the wrong, I can choose to forgive them.
+-> Replay scenario.
+    <<jump SceneOne>>
+-> Exit.
+    <<disableDialogue>>
+===
+
